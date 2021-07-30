@@ -8,6 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
+     <!-- Bootsrap Icon -->
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
     <!-- My CSS -->
 
     <link rel="stylesheet" href="style.css" />
@@ -47,9 +51,9 @@
       <img src="img/my foto 2.jpg" alt="Ibnu Soleh Asaddin" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Ibnu Soleh Asaddin</h1>
       <p class="lead">Fresh Graduate | Data Scientist</p>
-      <p class="lead"> <i class="bi bi-whatsapp"></i>Whatsapp : <a href="https://api.whatsapp.com/send?phone=6281310668680">081310668680</a> | 
-        <i class="bi bi-linkedin"></i>LinkedIn : <a href="https://www.linkedin.com/in/ibnu-soleh-asaddin-26870420a" >Ibnu Soleh Asaddin</a> | 
-        <i class="bi bi-mailbox2"></i>Email : <a href="mailto:ibnu.erylozi@gmail.com">ibnu.erylozi@gmail.com</a></p>
+      <p class="lead"> <i class="bi bi-whatsapp text-success"></i> Whatsapp : <a href="https://api.whatsapp.com/send?phone=6281310668680">081310668680</a> | 
+        <i class="bi bi-linkedin text-primary"></i> LinkedIn : <a href="https://www.linkedin.com/in/ibnu-soleh-asaddin-26870420a" >Ibnu Soleh Asaddin</a> | 
+        <i class="bi bi-mailbox2 text-primary"></i> Email : <a href="mailto:ibnu.erylozi@gmail.com">ibnu.erylozi@gmail.com</a></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -305,20 +309,28 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form>
+            <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
+              <strong>Thank You!</strong> Your request has been submited.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name='iasaddin-contact-form'>
               <div class="mb-3">
                 <label for="name" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="full name"/>
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email Adress</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email address"/>
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Message</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
+                <textarea class="form-control" id="pesan" rows="3" name="message"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary btn-submit">Submit</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
             </form>
           </div>
         </div>
@@ -337,7 +349,7 @@
 
     <!-- Footer -->
     <footer class="bg-primary text-white text-center pb-5">
-      <p>Created with love <i class="bi bi-suit-heart-fill"></i> by <a href="https://www.linkedin.com/in/ibnu-soleh-asaddin-26870420a" class="text-white fw-bold">Ibnu Soleh Asaddin</a></p>
+      <p>Created with <i class="bi bi-suit-heart-fill text-danger"></i> by <a href="https://www.linkedin.com/in/ibnu-soleh-asaddin-26870420a" class="text-white fw-bold">Ibnu Soleh Asaddin</a></p>
     </footer>
 
     <!-- Akhir Footer -->
@@ -348,5 +360,17 @@
     sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxj6VJFVOAiJ-zB1Fk4a8iJ06-F0_Dxa3nXVL97jS4hQGRfzYEJCgoJFD-WLrJdJjqs/exec' ;
+      const form = document.forms['iasaddin-contact-form'];
+    
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>
