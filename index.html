@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,9 +9,41 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
+    <!-- ICO -->
+    <link rel="shortcut icon" href="faveicon" href="ico/fiveicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="ico/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="ico/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="ico/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="ico/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="ico/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="ico/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="ico/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="ico/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="ico/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="ico/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="ico/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="ico/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="ico/mstile-310x310.png" />
+
      <!-- Bootsrap Icon -->
 
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+      <!-- AOS -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+      <!-- Google Fonts CSS -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
 
     <!-- My CSS -->
 
@@ -22,7 +55,10 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient shadow-sm fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Ibnu Soleh Asaddin</a>
+        <a class="navbar-brand" href="#">
+          <img src="ico/favicon.ico" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          My Portofolio
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,8 +86,8 @@
     <section class="jumbotron text-center">
       <img src="img/my foto 2.jpg" alt="Ibnu Soleh Asaddin" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Ibnu Soleh Asaddin</h1>
-      <p class="lead">Fresh Graduate | Data Scientist</p>
-      <p class="lead"> <i class="bi bi-whatsapp text-success"></i> Whatsapp : <a href="https://api.whatsapp.com/send?phone=6281310668680">081310668680</a> | 
+      <p class="lead-1"></p>
+      <p class="lead-2"> <i class="bi bi-whatsapp text-success"></i> Whatsapp : <a href="https://api.whatsapp.com/send?phone=6281310668680">081310668680</a> | 
         <i class="bi bi-linkedin text-primary"></i> LinkedIn : <a href="https://www.linkedin.com/in/ibnu-soleh-asaddin-26870420a" >Ibnu Soleh Asaddin</a> | 
         <i class="bi bi-mailbox2 text-primary"></i> Email : <a href="mailto:ibnu.erylozi@gmail.com">ibnu.erylozi@gmail.com</a></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -71,12 +107,12 @@
     <section id="about">
       <div class="container">
         <div class="row text-center mb-3">
-          <div class="col">
+          <div class="col" >
             <h2>About Me</h2>
           </div>
         </div>
         <div class="row fs-5 mb-3 text-center">
-          <div class="col md-8">
+          <div class="col md-8" data-aos="fade-down-right" data-aos-duration="1000">
             <p>
               Saya adalah lulusan Teknik Informatika Universitas Mercu Buana tahun 2020. Memiliki pengalaman sebagai Staff Data dan System Analyst selama 3 tahun dan masuk ke dalam tim project replacement ERP dari Microsoft Dynamics CRM
               menjadi Salesforce. Saya memiliki minat berkarir sebagai Data Scientist dan mempunyai ketertarikan dalam bidang analisis berdasarkan pengolahan data dan angka. Contoh project yang sudah saya buat yaitu menggunakan metode
@@ -85,7 +121,7 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
             <p class="fw-bold fs-4">Skills</p>
             <p>
               <ul class="list-group list-group-flush text-start">
@@ -102,7 +138,7 @@
               </ul>
             </p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
             <p class="fw-bold fs-4">Education</p>  
             <p class="fw-bold fs-5"><u>Universitas Mercu Buana (2016-2020)</u></p>
             <p>
@@ -125,7 +161,8 @@
             </p>
           </div>
           <div class="row fs-5 mb-3">
-            <div class="col md-8">
+            <div class="col md-8" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="300">
               <p class="fw-bold fs-4">Work Experience</p> 
               <p>
                 <ul class="list-group list-group-flush text-start">
@@ -164,7 +201,7 @@
                             <ul>Meningkatkan efisiensi matching data reconcile antara CRM Dynamics dan Sandvine Bandwidth Management dengan kalkulasi 85% (60% perfectly match, 25% match to be done) dan 15% unmatched dengan jumlah data service 4470 pada 2 aplikasi yang berbeda</ul></li>
                         </ul>
                       </p>
-                    <p class="mb-3"><a><u>Staff Project Migration system CRM Dynamics to Salesforce (Desember 2020-Juni 2021)</u></a></p>
+                    <p class="mb-3"><a><u><i class="bi bi-arrow-right-circle"></i>Staff Project Migration system CRM Dynamics to Salesforce (Desember 2020-Juni 2021)</u></a></p>
                       <p>
                         <ul>
                           <li>Membuat Flowchart proses yang akan digunakan pada salesforce</li>
@@ -220,7 +257,8 @@
             </div>
           </div>
       <div class="row">
-        <div class="col">
+        <div class="col" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="300">
           <p class="fw-bold fs-4">Award on Campus</p>
           <p>
             <ul class="list-group list-group-flush">
@@ -254,7 +292,7 @@
         </div>
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
               <img src="img/projects/house.jpg" class="card-img-top" alt="Projects 1" />
               <div class="card-body">
                 <p class="card-text text-center">Laporan ini memberikan prediksi harga rumah menggunakan Alogaritma Regresi. 
@@ -265,7 +303,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="150">
               <img src="img/projects/electric vehicle.jpg" class="card-img-top" alt="Projects 2" />
               <div class="card-body">
                 <p class="card-text text-center">Laporan ini dibuat untuk membuat prediksi harga Kendaraan Listrik menggunakan Metode Algoritma Regresi. 
@@ -276,7 +314,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
               <img src="img/projects/covid.jpg" class="card-img-top" alt="Projects 3" />
               <div class="card-body text-center">
                 <p class="card-text">Dashboard ini di desain untuk mempermudah melihat persebaran kasus Covid-19 di Indonesia per bulan Maret 2021.
@@ -361,7 +399,30 @@
       crossorigin="anonymous"
     ></script>
 
-    <script>
+
+    <!-- AOS -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+       <script>
+          AOS.init({
+          once: true
+          }
+          );
+       </script>
+
+
+  <!-- GSAP -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+      <script>
+        gsap.registerPlugin(TextPlugin);
+        gsap.to('.lead-1', {duration: 2, delay: 1.5, text: 'Fresh Graduate | Data Scientist'});
+        gsap.from('.jumbotron img', {duration:1, rotateY: 360, opacity:0});
+        gsap.from('.navbar', {duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce'});
+        gsap.from('.display-4', {duration: 1.5, x: -50, opacity: 0, delay: 1, ease: 'elastic'});
+      </script>
+
+  <!-- JS -->
+   <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbxj6VJFVOAiJ-zB1Fk4a8iJ06-F0_Dxa3nXVL97jS4hQGRfzYEJCgoJFD-WLrJdJjqs/exec' ;
       const form = document.forms['iasaddin-contact-form'];
       const btnSubmit = document.querySelector('.btn-submit');
